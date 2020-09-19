@@ -2,11 +2,9 @@ package org.horizoncolumbus.hs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Calculator {
 
 public static void main(String[] args) {
-    //double number1 = 19.99d;
-    //double number2 = 19.99d;
     //-----------------ENTERING NUMBER------------------------------
     Scanner input = new Scanner(System.in);
     System.out.print("ENTER FIRST NUMBER: ");
@@ -31,15 +29,13 @@ public static void main(String[] args) {
     String line11 =  "  /  /\\  \\   |        |";
     String line12=   " /  /  \\  \\  |        /";
     String line13=   "/__/    \\__\\ |_______/";
-    //String line14=   "__";
-
     //-----------------SELECTING OPERATION-----------------------------
     switch (operation.toUpperCase()) {
         case "M" -> System.out.println(number1 * number2);
         case "A" -> System.out.println(number1 + number2);
         case "D" -> System.out.println(number1 / number2);
         case "S" -> System.out.println(number1 - number2);
-        case "XD" -> System.out.println(line7 + "\n" + line9 + "\n" + line10 + "\n" + line11 + "\n" + line12+ "\n" + line13+ "\n");// + line14);
+        case "XD" -> System.out.println(line7 + "\n" + line9 + "\n" + line10 + "\n" + line11 + "\n" + line12+ "\n" + line13+ "\n");
         default -> System.out.println("ERROR 404");
     }
 }
